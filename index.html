@@ -2,177 +2,338 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Css-grid</title>
-    <link rel="stylesheet" href="static/styles/style-main-container.css">
-    <link rel="stylesheet" href="static/styles/style-card-container.css">
-    <link rel="stylesheet" href="static/styles/nav-bar.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/styles/mycss.css">
+    <link rel="stylesheet" href="source/styles/bgvideo.css">
+    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="source/files/favicon.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon.io/favicon-16x16.png">
+    <link rel="manifest" href="source/files/favicon.io/site.webmanifest">
+    <title>HiT</title>
 </head>
-<!--Комментариии "Ctrl + /"-->
 
 <body>
-    <div class="nav-bar">
-        <a href="">Logo</a>
-        <div class="drop">
-            <button class="nav-btn">&#9776</button>
-            <div class="nav-list">
-                <a href="index.html">О нас</a>
-                <a href="index.html">Прайс</a>
-                <a href="index.html">Поставщик</a>
-                <a href="index.html">Контракты</a>
-                <a href="index.html">Работа</a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="source/images/Logo.bmp"
+                        alt="Logo image"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Contacs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">
+                                <img style="width: 30px;margin-inline:1em" src="source/images/yt.png" alt="yt">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">
+                                <img style="width: 25px;margin-inline:1em" src="source/images/tg.png" alt="tg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="bgvideo">
+            <video src="source/files/video-bg.mp4" type="video/mp4" autoplay loop muted >
+            </video>
+            <div class="effect">
+
+            </div>
+            <div class="video-text">
+                <h1>
+                    Будущее здесь
+                </h1>
             </div>
         </div>
-    </div>
+        
+        <!-- m-4 margin с отступом 1.5, также есть mt,mb,mx,my,p,pt,pb и тд -->
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-lg-1">
 
-    <div class="main-container">
-        <div class="left-bar">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, iste.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae excepturi placeat, eius
-                adipisci tempora in doloremque nesciunt beatae! Animi sed corporis tempora perspiciatis a.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, iste.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae excepturi placeat, eius
-                adipisci tempora in doloremque nesciunt beatae! Animi sed corporis tempora perspiciatis a.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, iste.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae excepturi placeat, eius
-                adipisci tempora in doloremque nesciunt beatae! Animi sed corporis tempora perspiciatis a.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, iste.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae excepturi placeat, eius
-                adipisci tempora in doloremque nesciunt beatae! Animi sed corporis tempora perspiciatis a.</p>
+                </div>
+
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                                    aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                                    aria-label="Slide 8"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img class="w-100" src="source/images/controller.png" alt="....">
+                                            </div>
+                                            <div class="col-lg-6 col-6 slide-text">
+                                                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут
+                                                    рыбные тексты. Своего, продолжил диких обеспечивает, напоивший домах
+                                                    даль там однажды точках на берегу, запятых знаках. Маленький,
+                                                    переулка.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-6">
+                                                <img class="w-100" src="source/images/gaming pc.png" alt="....">
+                                            </div>
+                                            <div class="col-lg-6 col-6 slide-text">
+                                                <p> Своего, продолжил диких обеспечивает, напоивший домах
+                                                    даль там однажды точках на берегу, запятых знаках. Маленький,
+                                                    переулка.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img class="w-100" src="source/images/acc.png" alt="....">
+                                            </div>
+                                            <div class="col-lg-6 col-6 slide-text">
+                                                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут
+                                                    рыбные тексты. Своего, продолжил диких обеспечивает, напоивший домах
+                                                    даль там однажды точках на берегу, запятых знаках. </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img class="w-100" src="source/images/other.png" alt="....">
+                                            </div>
+                                            <div class="col-lg-6 col-6 slide-text">
+                                                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут
+                                                    рыбные тексты. Своего, продолжил диких обеспечивает, напоивший домах
+                                                    даль там однажды точках на берегу, запятых знаках. </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img class="w-100" src="source/images/gpu.png" alt="....">
+                                            </div>
+                                            <div class="col-lg-6 col-6 slide-text">
+                                                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут
+                                                    рыбные тексты. Своего, продолжил диких обеспечивает, напоивший домах
+                                                    даль там однажды точках на берегу, запятых знаках. </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-6">
+                                                <img class="w-100" src="source/images/laptop.png" alt="....">
+                                            </div>
+                                            <div class="col-lg-6 col-6 slide-text">
+                                                <p> Своего, продолжил диких обеспечивает, напоивший домах
+                                                    даль там однажды точках на берегу, запятых знаках. Маленький,
+                                                    переулка.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-6">
+                                                <img class="w-100" src="source/images/vr.png" alt="....">
+                                            </div>
+                                            <div class="col-lg-6 col-6 slide-text">
+                                                <p> Далеко-далеко за словесными горами в стране.Своего, продолжил диких
+                                                    обеспечивает, напоивший домах
+                                                    даль там однажды точках на берегу, запятых знаках. Маленький,
+                                                    переулка.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-6">
+                                                <img class="w-100" src="source/images/cpu.png" alt="....">
+                                            </div>
+                                            <div class="col-lg-6 col-6 slide-text">
+                                                <p> Далеко-далеко, за словесными.Своего, продолжил диких обеспечивает,
+                                                    напоивший домах
+                                                    даль там однажды точках на берегу, запятых знаках. Маленький,
+                                                    переулка.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-lg-12 col-md-12 text-center mt-4">
+
+                        <button type="button" class="btn btn-outline-primary btn-lg my-4">Узнать больше</button>
+
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 text-center mt-4">
+
+                        <p>
+                            Вам нужна помощь?
+                        </p>
+
+                    </div>
+                    <div class="col-lg-12 col-md-12 text-center">
+
+                        <img class="call-anim" style="width: 40px;" src="source/images/phone.png" alt="tg">
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-12">
+                    <div class="row px-2">
+                        <div class="col-lg-12 sidebar my-4">
+                            <p>
+                                Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты.
+                                Назад запятой своих живет собрал оксмокс знаках журчит, имени злых! Он приставка если
+                                ему собрал.
+                                <a href="#">Узнать больше>>></a>
+                            </p>
+
+                        </div>
+
+                        <div class="col-lg-12 sidebar my-4">
+                            <p>
+                                Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты.
+                                Маленькая, ведущими меня! Силуэт предупредила парадигматическая рукопись скатился, жизни
+                                диких!
+                                <a href="#">Узнать больше>>></a>
+                            </p>
+
+                        </div>
+                        <div class="col-lg-12 sidebar my-4">
+                            <p>
+                                Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты.
+                                Дорогу необходимыми до грустный что.
+                                <a href="#">Узнать больше>>></a>
+                            </p>
+
+                        </div>
+                        <div class="col-lg-12 sidebar my-4">
+                            <p>
+                                Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.
+                                Своих, букв. Курсивных, имени однажды. Вскоре прямо коварный, страна живет лучше
+                                большого образ свой, рукопись имеет семантика предупредила грустный свое?<a
+                                    href="#">Узнать больше>>></a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
         </div>
 
-        <div class="container">
-            <div class="card">
-                <a href="#"><img src="static/images/image.bmp" alt="Sheep"></a>
-                <div class="info">
-                    <a href="#">
-                        <p>Яхта</p>
-                    </a>
-                    <a href="#">
-                        <p>150000000</p>
-                    </a>
-                    <button>Купить сейчас</button>
+    </section>
+
+    <footer class="mt-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 footer-text text-center">
+                    <p>
+                        All Righrs Reserved 2024
+                    </p>
                 </div>
-            </div>
-            <div class="card">
-                <a href="#"><img src="static/images/image.bmp" alt="Sheep"></a>
-                <div class="info">
-                    <a href="#">
-                        <p>Яхта</p>
-                    </a>
-                    <a href="#">
-                        <p>150000000</p>
-                    </a>
-                    <button>Купить сейчас</button>
+                <div class="col-lg-4 col-md-12 footer-text text-center">
+                    <p>
+                        Contacs<br>Job <br>Our Team
+                    </p>
                 </div>
-            </div>
-            <div class="card">
-                <a href="#"><img src="static/images/image.bmp" alt="Sheep"></a>
-                <div class="info">
-                    <a href="#">
-                        <p>Яхта</p>
-                    </a>
-                    <a href="#">
-                        <p>150000000</p>
-                    </a>
-                    <button>Купить сейчас</button>
+                <div class="col-lg-4 col-md-12 media-links">
+                    <img style="width: 40px;margin-inline:1em" src="source/images/yt.png" alt="yt">
+                    <img style="width: 40px;margin-inline:1em" src="source/images/tg.png" alt="tg">
                 </div>
-            </div>
-            <div class="card">
-                <a href="#"><img src="static/images/image.bmp" alt="Sheep"></a>
-                <div class="info">
-                    <a href="#">
-                        <p>Яхта</p>
-                    </a>
-                    <a href="#">
-                        <p>150000000</p>
-                    </a>
-                    <button>Купить сейчас</button>
-                </div>
-            </div>
-            <div class="card">
-                <a href="#"><img src="static/images/image.bmp" alt="Sheep"></a>
-                <div class="info">
-                    <a href="#">
-                        <p>Яхта</p>
-                    </a>
-                    <a href="#">
-                        <p>150000000</p>
-                    </a>
-                    <button>Купить сейчас</button>
-                </div>
-            </div>
-            <div class="card">
-                <a href="#"><img src="static/images/image.bmp" alt="Sheep"></a>
-                <div class="info">
-                    <a href="#">
-                        <p>Яхта</p>
-                    </a>
-                    <a href="#">
-                        <p>150000000</p>
-                    </a>
-                    <button>Купить сейчас</button>
-                </div>
-            </div>
-            <div class="card">
-                <a href="#"><img src="static/images/image.bmp" alt="Sheep"></a>
-                <div class="info">
-                    <a href="#">
-                        <p>Яхта</p>
-                    </a>
-                    <a href="#">
-                        <p>150000000</p>
-                    </a>
-                    <button>Купить сейчас</button>
-                </div>
-            </div>
-            <div class="card">
-                <a href="#"><img src="static/images/image.bmp" alt="Sheep"></a>
-                <div class="info">
-                    <a href="#">
-                        <p>Яхта</p>
-                    </a>
-                    <a href="#">
-                        <p>150000000</p>
-                    </a>
-                    <button>Купить сейчас</button>
-                </div>
-            </div>
-            <div class="card">
-                <a href="#"><img src="static/images/image.bmp" alt="Sheep"></a>
-                <div class="info">
-                    <a href="#">
-                        <p>Яхта</p>
-                    </a>
-                    <a href="#">
-                        <p>150000000</p>
-                    </a>
-                    <button>Купить сейчас</button>
-                </div>
+
             </div>
         </div>
-        <div class="right-bar">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, iste.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae excepturi placeat, eius
-                adipisci tempora in doloremque nesciunt beatae! Animi sed corporis tempora perspiciatis a.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, iste.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae excepturi placeat, eius
-                adipisci tempora in doloremque nesciunt beatae! Animi sed corporis tempora perspiciatis a.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, iste.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae excepturi placeat, eius
-                adipisci tempora in doloremque nesciunt beatae! Animi sed corporis tempora perspiciatis a.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, iste.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam vitae excepturi placeat, eius
-                adipisci tempora in doloremque nesciunt beatae! Animi sed corporis tempora perspiciatis a.</p>
 
 
-        </div>
-    </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
-
 
 </html>
